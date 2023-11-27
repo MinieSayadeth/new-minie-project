@@ -3,104 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
   </head>
   <body>
     <section>
-      <div class="nav">
-        <img src="./HTML Practise Assets/HTML Practise Assets/FES.svg" class="logo" alt="" />
+      <nav>
+        <img
+          src="./HTML Practise Assets/HTML Practise Assets/FES.svg"
+          class="logo"
+          class="logo"
+          alt=""
+        />
         <ul>
-            <li><a href="#about"></a>About</li>
-            <li><a href="#discord"></a>Discord</li>
-            <li><a href="#contact"></a>Contact</li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#discord">Discord</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
+      </nav>
       <header>
-        <div>
-          <h1>Best Place to Learn Frontend</h1>
-          <p>
-            Go from being an absolute beginner to being a pro with a simplified
-            process
-          </p>
-          <button>Start Now</button>
-        </div>
-        <div>
-          <figure>
-            <img
-              src="./HTML Practise Assets/HTML Practise Assets/laptop.png"
-              alt="Home Page Image"
-            />
-          </figure>
+        <div class="row">
+          <div>
+            <h1>Best Place to Learn Frontend</h1>
+            <p class="subheader">
+              Go from being an absolute beginner to being a pro with a
+              simplified process
+            </p>
+            <button>Start Now</button>
+          </div>
+          <div>
+            <figure>
+              <img
+                src="./HTML Practise Assets/HTML Practise Assets/laptop.png"
+                alt="Home Page Image"
+              />
+            </figure>
+          </div>
         </div>
       </header>
     </section>
     <main>
       <section id="about">
         <h2>About</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            alias, repudiandae nostrum qui rem fugiat quo, reiciendis, ad earum
-            tempora dolorum beatae! Pariatur est obcaecati, ipsum natus
-            inventore blanditiis sit?/p>
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            alias, repudiandae nostrum qui rem fugiat quo, reiciendis, ad earum
-            tempora dolorum beatae! Pariatur est obcaecati, ipsum natus
-            inventore blanditiis sit?/p>
-          </p>
+        <div class="row">
+          <div class="section__description">
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                alias, repudiandae nostrum qui rem fugiat quo, reiciendis, ad
+                earum tempora dolorum beatae! Pariatur est obcaecati, ipsum
+                natus inventore blanditiis sit
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                alias, repudiandae nostrum qui rem fugiat quo, reiciendis, ad
+                earum tempora dolorum beatae! Pariatur est obcaecati, ipsum
+                natus inventore blanditiis sit
+              </p>
+            </div>
+            <figure class="about__img--wrapper">
+              <img
+                src="./HTML Practise Assets/HTML Practise Assets/about.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
         </div>
-        <figure>
-          <img
-            src="./HTML Practise Assets/HTML Practise Assets/about.jpg"
-            alt=""
-          />
-        </figure>
       </section>
-      <section id="Discord"></section>
-      <h2>Discord</h2>
-      <figure>
-        <img
-          src="./HTML Practise Assets/HTML Practise Assets/discord.png"
-          alt=""
-        />
-      </figure>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, animi
-          officia deleniti debitis nihil vel. At veritatis, molestiae beatae
-          iusto quasi doloribus. Accusantium odit delectus iusto ratione natus
-          quam consectetur!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, animi
-          officia deleniti debitis nihil vel. At veritatis, molestiae beatae
-          iusto quasi doloribus. Accusantium odit delectus iusto ratione natus
-          quam consectetur!
-        </p>
-      </div>
+      <section id="Discord">
+        <h2>Discord</h2>
+        <div class="row">
+          <div class="section__description">
+            <figure>
+              <img
+                src="./HTML Practise Assets/HTML Practise Assets/discord.png"
+                alt=""
+              />
+            </figure>
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+                animi officia deleniti debitis nihil vel. At veritatis, molestiae
+                beatae iusto quasi doloribus. Accusantium odit delectus iusto
+                ratione natus quam consectetur!
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+                animi officia deleniti debitis nihil vel. At veritatis, molestiae
+                beatae iusto quasi doloribus. Accusantium odit delectus iusto
+                ratione natus quam consectetur!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="Contact">
         <h2>Contact</h2>
         <form action="">
           <span>Email</span>
-          <input type="text" placeholder="jane@example.com" />
+          <input type="email" placeholder="jane@example.com" />
           <span>Message</span>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Send us a Message"></textarea>
           <button>Submit</button>
         </form>
       </section>
     </main>
     <footer>
-      <figure>
+      <figure class="footer__logo">
         <img src="./HTML Practise Assets/HTML Practise Assets/FES.svg" alt="" />
       </figure>
-      <ul>
-        <a href="#About">About</a>
-        <a href="#Discord">Discord</a>
-        <a href="#Contact">Contact</a>
-        <a href="#Courses">Courses</a>
+      <ul class="footer__links">
+        <li>
+          <a href="#About" class="footer__link">About</a>
+        </li>
+        <li>
+          <a href="#Discord" class="footer__link">Discord</a>
+        </li>
+        <li>
+          <a href="#Contact" class="footer__link">Contact</a>
+        </li>
+        <li>
+          <a href="#Courses" class="footer__link">Courses</a>
+        </li>
       </ul>
     </footer>
   </body>
